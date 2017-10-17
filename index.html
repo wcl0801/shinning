@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+
+		<style type="text/css">
+			/*html {
+				height: 20px;
+			}*/
+			
+			#box {
+				width: 100%;
+				height: 75px;
+				background: #1B1B1B;
+				/*position: fixed;*/
+			}
+			
+			#nav {
+				width: 96%;
+				/*margin: auto;*/
+				height: 75px;
+				/*position: fixed;*/
+			}
+			
+			#menu {
+				width: 70%;
+			}
+			
+			#menu ul {
+				width: auto;
+				height: 75px;
+				position: absolute;
+				right: 0;
+				top: 0;
+				padding-right: 12%;
+				/*left: 44%;*/
+				/*bottom: 0;*/
+				/*background: red;*/
+				/*1060*/
+				overflow: hidden;
+			}
+			
+			#menu ul li {
+				width: auto;
+				float: left;
+				margin-left: 30px;
+				height: 75px;
+				line-height: 75px;
+				text-align: center;
+			}
+			
+			#logo {
+				position: relative;
+				left: 10px;
+				top: 17px;
+			}
+			
+			#menu ul li a {
+				width: 100%;
+				color: #7B7B7B;
+				font-size: 17px;
+				padding: 2px 6px;
+				/*border: 1px solid #7B7B7B;*/
+				border-radius: 5px;
+			}
+			
+			
+			#home ul {
+				overflow: hidden;
+				width: 1000px;
+				height: 180px;
+				/*margin: 75px;*/
+				border-bottom: 1px solid #E1E1E1;
+				margin: auto;
+				position: relative;
+			}
+			
+			#home img {
+				height: 100%;
+				width: 100%;
+			}
+			
+			#home ul li {
+				float: left;
+				height: 100%;
+				/*margin-right: 20px;*/
+			}
+			
+			.pic,
+			.pic2 {
+				width: 600px;
+			}
+			
+			.pic2 {
+				position: absolute;
+				right: 0;
+				top: 0;
+			}
+			
+			.em,
+			.em2 {
+				width: 20px;
+				height: 100%;
+				/*margin-right: 20px;*/
+				background: gray;
+			}
+			
+			.text {
+				width: 380px;
+				position: absolute;
+				top: 20px;
+				right: -20px;
+			}
+			
+			.text2 {
+				padding-top: 20px;
+				width: 380px;
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+			
+			.em2 {
+				position: absolute;
+				right: 600px;
+				top: 0;
+			}
+			
+			.text p,
+			h6 {
+				width: 340px;
+			}
+			
+			.text h6 {
+				font-size: 25px;
+				font-weight: bold;
+				line-height: 35px;
+			}
+			
+			.text p {
+				line-height: 25px;
+			}
+			
+			.text2 {
+				text-align: right;
+			}
+			
+			.text2 p,
+			h6 {
+				width: 340px;
+			}
+			
+			.text2 h6 {
+				font-size: 25px;
+				font-weight: bold;
+				line-height: 35px;
+			}
+			
+			.text2 p {
+				line-height: 25px;
+			}
+			
+			#bottom {
+				/*background: red;*/
+				height: 200px;
+				width: 100%;
+				position: relative;
+				overflow: hidden;
+			}
+			#bottom img{
+				width: 100%;
+				
+			}
+			
+			#bottom .b_logo{
+				/*background: black;*/
+				width: 25px;
+				/*height: 25px;*/
+				
+				/*float: left;*/
+				position: absolute;
+				left: 0;
+				right: 0;
+				margin: 0 auto;
+				margin-top: 60px;
+				
+				
+			}
+			#bottom #four{
+				/*position: relative;*/
+				margin:  auto;
+				width: 116px;
+				height:30px ;
+				
+			}
+			#bottom #four div{
+				
+				float: left;
+				margin-left: 4px;
+				margin-top: 50px;
+				padding-top: 50px;
+				
+				text-align: center;
+			}
+			#bottom p{
+				
+				text-align: center;
+				
+				margin-top:  120px;
+				margin-bottom: 20px;
+				font-size: 10px;
+				color: #A8A8A8;
+				
+			}
+			@media only screen and (max-width: 800px) {
+				html{
+					height: 100%;
+				}
+				#box{
+					position: fixed;
+					z-index: 100;
+				}
+				#bottom{
+					height: 100%;
+				}
+				#home{
+					padding-top: 75px;
+					width:100%;
+					height: 200%;
+				}
+				#home .em,.em2{
+					display: none;
+				}
+				#home ul{
+					
+					overflow: hidden;
+					width: 100%;
+				}
+				#home ul .text,.text2{
+					width: 100%;
+				}
+				
+				#home ul li p,h6{
+					float: left;
+					text-align: center;
+					width: 100%;
+					
+				}
+				#home .pic,.pic2{
+					width: 100%;
+				}
+				#box #menu{
+					display: none;
+				}
+				#box #dis{
+					display: inline-block;
+				}
+			}
+			#dis{
+				position: absolute;
+				right: 20px;
+				top: 20px;
+				height: 15px;
+				display: none;
+				z-index: 200;
+				/*width: 40px;*/
+				/*overflow: hidden;*/
+				
+			}
+			#dis p{
+				width: 30px;
+				height: 5px;
+				background: #CFDB00;
+				margin-top: 5px;
+				border-radius: 1px;
+				/*z-index: 200;*/
+				
+			}
+			#dis .list{
+				background: #CFDB00;
+				border: 1px solid #CFDB00;
+				border-radius: 2px;
+				display: none;
+				/*position: relative;*/
+				/*z-index: 200;*/
+			}
+			#dis ul li{
+				margin: 2px 0;
+				width: 100px;
+				text-align: center;
+				
+			} 
+			#dis .list li a{
+				padding: 3px;
+				text-align: center;
+			}
+			.light{
+				border: 1px solid #7B7B7B;
+				border-radius: 5px;
+				color: white;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--导航-->
+		<div id="box">
+			<div id="nav">
+				<div id="logo">
+					<a href="###"><img src="img/shininglogo.png" /></a>
+				</div>
+				<div id="menu">
+					<ul>
+
+						<li>
+							<a href="HOME.html"  class="light" style="color:white">HOME</a>
+						</li>
+						<li>
+							<a href="About.html">About</a>
+						</li>
+						<li>
+							<a href="Rendering.html">Rendering</a>
+						</li>
+						<li>
+							<a href="3D Animate.html">3D Animation</a>
+						</li>
+						<li>
+							<a href="Bim.html">Bim</a>
+						</li>
+						<li>
+							<a href="Conact.html">Contact</a>
+						</li>
+					</ul>
+				</div>
+				<div id="dis">
+					<p></p>
+					<p></p>
+					<p></p>
+					<ul class="list">
+						<li>
+							<a href="HOME.html" class="light" style="color:white">HOME</a>
+						</li>
+						<li>
+							<a href="About.html">About</a>
+						</li>
+						<li>
+							<a href="Rendering.html">Rendering</a>
+						</li>
+						<li>
+							<a href="3D Animate.html">3D Animation</a>
+						</li>
+						<li>
+							<a href="Bim.html">Bim</a>
+						</li>
+						<li>
+							<a href="Conact.html">Contact</a>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+			
+		</div>
+		<!--HOME-->
+		<div id="home">
+			<a href="Rendering.html"><ul>
+				<li class="pic"><img src="img/home_pic_1.png" /></li>
+				<li class="em"></li>
+				<li class="text">
+					<h6>RENDERINGS</h6>
+					<p>Masterplan、Public Building、commercial Building、Residential Building、Landscape Designa</p>
+				</li>
+			</ul>
+			</a>
+			<a href="Bim.html">
+			<ul>
+				<li class="pic pic2"><img src="img/home_pic_2.png" /></li>
+				<li class="em2"></li>
+				<li class="text2">
+					<h6>BIM</h6>
+					<p>Model Completion、Clash Detection、MEP Integration、Curtain Wall Remedying、BIM Consulting</p>
+				</li>
+
+			</ul>
+			</a>
+			<a href="3D Animate.html">
+			<ul>
+				<li class="pic"><img src="img/home_pic_3.png" /></li>
+				<li class="em"></li>
+				<li class="text">
+					<h6>3D ANIMATION</h6>
+					<p>Real estate advertising animation Design scheme Animation Corporate promotional Animation</p>
+				</li>
+			</ul>
+			</a>
+		</div>
+
+		</div>
+		<!--底部-->
+		<div id="bottom">
+						
+			<div class="b_logo">
+				<a href="###"><img src="img/mail.jpg"/></a>
+			</div>
+
+			<div id="four">
+				<div class="b_logo>
+				<a href="###"><img src="img/facebook.jpg "/><!--<img src="img/facebook_h.jpg ">--></a>
+			</div>
+			<div class="b_logo>
+				<a href="###"><img src="img/youtube.jpg" /><!--<img src="img/youtube_h.jpg">--></a>
+			</div>
+			<div class="b_logo>
+				<a href="###"><img src="img/linkedln.jpg "/><!--<img src="img/linkedln_h.jpg ">--></a>	
+			</div>
+			<div class="b_logo>
+				<a href="###"><img src="img/twitter.jpg" /><!--<img src="img/twitter_h.jpg">--></a>
+			</div>
+			</div>
+
+			<p>Copyright © 1998-2015 shining Group</p>
+		</div>
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script src="js/jquery.easing.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$("#dis").on("mouseover mouseout",function(ev){
+				
+				$(".list").stop().slideToggle(1000);
+			});
+			$("#menu ul li a").on("mouseenter", function() {
+				console.log(this);
+				$(this).css({
+						border: "1px solid #7B7B7B",
+					
+					    color: "white"
+				});
+				
+				});
+			
+			$("#menu ul li a").on("mouseleave", function() {
+				//console.log(this);
+				$(this).not(".light").css({
+					border: "none",
+					//border-radius: "5px",
+					color: "#7B7B7B"
+				});
+			});
+
+			$("#home  ul").eq(1).first().css("margin", "auto");
+			$("#home  ul").on("mouseenter", function() {
+				//console.log($(this).index());
+				var index = $(this).index();
+				//console.log($(this).children()[0]);
+				var pic = $(this).children()[0].children;
+				//console.log($(pic));
+
+				$(pic).attr('src', 'img/' + index + '.png');
+				var em = $(this).children()[1];
+				$(em).css({
+					background: "#CFDB00"
+				});
+
+			});
+			$("#home  ul").on("mouseleave", function() {
+				var pic = $(this).children()[0].children;
+				var index = $(this).index() + 1;
+
+				$(pic).attr('src', 'img/home_pic_' + index + '.png');
+				var em = $(this).children()[1];
+				$(em).css({
+					background: "#A8A8A8"
+				});
+			});
+			$("#bottom img").on("mouseenter",function(){
+				console.log($(this));
+				console.log($(this).attr("src"));
+				var img = $(this).attr("src");
+				console.log(typeof img);
+				arr = img.split(".");
+				console.log(arr[0])
+				var i = arr[0]+"_h";
+				console.log(i);
+				arr[0] = i;
+				console.log(arr)
+				var img = arr.join(".")
+				console.log(img)
+				$(this).attr("src",img);
+				
+			});
+			$("#bottom img").on("mouseleave",function(){
+				//$(this).removeAttr("src");
+				
+				var img = $(this).attr("src");
+				
+				arr = img.split("_h.");
+				
+				var img = arr.join(".")
+				
+				$(this).attr("src",img);
+				
+			});
+		</script>
+	</body>
+
+</html>

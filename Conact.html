@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/nav.css"/>
+		<style type="text/css">
+			#box {
+				width: 100%;
+				height: 75px;
+				background: #1B1B1B;
+				/*position: fixed;*/
+			}
+			
+			#nav {
+				width: 96%;
+				height: 75px;
+			}
+			
+			#menu {
+				width: 70%;
+			}
+			
+			#menu ul {
+				width: auto;
+				height: 75px;
+				position: absolute;
+				right: 0;
+				top: 0;
+				padding-right: 12%;
+				
+				overflow: hidden;
+			}
+			
+			#menu ul li {
+				width: auto;
+				float: left;
+				margin-left: 30px;
+				height: 75px;
+				line-height: 75px;
+				text-align: center;
+			}
+			
+			#logo {
+				position: relative;
+				left: 10px;
+				top: 17px;
+			}
+			
+			#menu ul li a {
+				width: 100%;
+				color: #7B7B7B;
+				font-size: 17px;
+				padding: 2px 6px;
+				/*border: 1px solid #7B7B7B;*/
+				border-radius: 5px;
+			}
+			
+			#dis {
+				display: none;
+			}
+			#bottom {
+				/*background: red;*/
+				height: 200px;
+				width: 100%;
+				position: relative;
+				overflow: hidden;
+			}
+			#bottom img{
+				width: 100%;
+				
+			}
+			
+			#bottom .b_logo{
+				/*background: black;*/
+				width: 25px;
+				/*height: 25px;*/
+				
+				/*float: left;*/
+				position: absolute;
+				left: 0;
+				right: 0;
+				margin: 0 auto;
+				margin-top: 60px;
+				
+				
+			}
+			#bottom #four{
+				/*position: relative;*/
+				margin:  auto;
+				width: 116px;
+				height:30px ;
+				
+			}
+			#bottom #four div{
+				
+				float: left;
+				margin-left: 4px;
+				margin-top: 50px;
+				padding-top: 50px;
+				
+				text-align: center;
+			}
+			#bottom p{
+				
+				text-align: center;
+				
+				margin-top:  120px;
+				margin-bottom: 20px;
+				font-size: 10px;
+				color: #A8A8A8;
+				
+			}
+			#wrap{
+				height: 540px;
+				background: #F5F5F5;
+			}
+			#wrap img{
+				
+			}
+			#contact{height: 290px;
+				text-align: center;
+				padding-top: 112px;
+				padding-bottom: 272px;
+				background: url(img/contact/contact_place.png) no-repeat 0 276px/100% auto;
+				
+			}
+			#contact .con{
+				padding-bottom: 30px;
+			}
+			
+			#contact .con{
+				font-style: normal;
+				font-size: 1.1em;
+				color: #595757;
+				font-weight: bold;
+			}
+			#contact span{
+				font-size: 1.4em;
+				font-weight: bold;
+			}
+			#contact .mail{
+				vertical-align:auto ;
+				margin-bottom: 5em;
+				color: #595757;
+			}
+			#contact .mail img{
+				vertical-align: middle;
+   				margin-right: 7px;
+  				width: 32px;
+			}
+			#contact ul{
+				overflow: hidden;
+				padding-left:23%;
+				
+			}
+			#contact ul li{
+				float: left;
+				width: 25%;
+				margin: 0 auto;
+			}
+			#contact ul li img{
+				float: left;
+				margin-right: 7px;
+				/*width: 100%;*/
+			}
+			#contact ul li div{
+				font-size: 0.8em;
+				float: left;
+				width: 60%;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--导航-->
+		<div id="box">
+			<div id="nav">
+				<div id="logo">
+					<a href="###"><img src="img/shininglogo.png" /></a>
+				</div>
+				<div id="menu">
+					<ul>
+
+						<li>
+							<a href="index.html">HOME</a>
+						</li>
+						<li>
+							<a href="About.html">About</a>
+						</li>
+						<li>
+							<a href="Rendering.html">Rendering</a>
+						</li>
+						<li>
+							<a href="3D Animate.html">3D Animation</a>
+						</li>
+						<li>
+							<a href="Bim.html">Bim</a>
+						</li>
+						<li>
+							<a href="Conact.html"  class="light" style="color:white">Contact</a>
+						</li>
+					</ul>
+				</div>
+				<div id="dis">
+					<p></p>
+					<p></p>
+					<p></p>
+					<ul class="list">
+						<li>
+							<a href="index.html">HOME</a>
+						</li>
+						<li>
+							<a href="About.html">About</a>
+						</li>
+						<li>
+							<a href="Rendering.html">Rendering</a>
+						</li>
+						<li>
+							<a href="3D Animate.html">3D Animation</a>
+						</li>
+						<li>
+							<a href="Bim.html">Bim</a>
+						</li>
+						<li>
+							<a href="Conact.html" class="light" style="color:white">Contact</a>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+		<!--联系方式-->
+		<div id="wrap">
+			<div id="contact">
+				<p class="con">
+					<span id="">
+				Contacts:
+			   	</span> Shaohua Wang(English) 马蘅晶(Japanese)
+				</p>
+				<p class="mail">
+					<span id="">
+						<img src="img/contact/contact_mail.jpg"/>
+				Email:
+			   	</span> shaohua@shiningcg.com(English) 2355757511@qq.com(Japanese)
+				</p>
+				<ul>
+					<li>
+						<img src="img/contact/contact_phone.png" />
+						<div>
+							<p>+86 21 6598 6866-661</p>
+							<p>+86 21 6598 6866-661</p>
+						</div>
+
+					</li>
+					<li>
+						<img src="img/contact/iphone.png" />
+						<div>
+							<p>+86 21 6598 6866-661</p>
+							<p>+86 21 6598 6866-661</p>
+						</div>
+
+					</li>
+					<li>
+						<img src="img/contact/contact_add.png" />
+						<div>
+							<p>+86 21 6598 6866-661</p>
+							<p>+86 21 6598 6866-661</p>
+						</div>
+
+					</li>
+				</ul>
+
+			</div>
+			<div id="bg">
+
+			</div>
+		</div>
+		<div id="bottom">
+			<div id="four">
+				<div class="b_logo>
+				<a href="###"><img src="img/facebook.jpg "/><!--<img src="img/facebook_h.jpg ">--></a>
+			</div>
+			<div class="b_logo>
+				<a href="###"><img src="img/youtube.jpg" /><!--<img src="img/youtube_h.jpg">--></a>
+			</div>
+			<div class="b_logo>
+				<a href="###"><img src="img/linkedln.jpg "/><!--<img src="img/linkedln_h.jpg ">--></a>	
+			</div>
+			<div class="b_logo>
+				<a href="###"><img src="img/twitter.jpg" /><!--<img src="img/twitter_h.jpg">--></a>
+			</div>
+			</div>
+
+			<p>Copyright © 1998-2015 shining Group</p>
+		</div>
+
+	</body>
+<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/nav.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/bottom.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		
+	</script>
+</html>
