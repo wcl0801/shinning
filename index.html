@@ -431,21 +431,21 @@
 			});
 			$("#menu ul li a").on("mouseenter", function() {
 				console.log(this);
-				$(this).css({
+				$(this).animate({
 						border: "1px solid #7B7B7B",
 					
 					    color: "white"
-				});
+				},500);
 				
 				});
 			
 			$("#menu ul li a").on("mouseleave", function() {
 				//console.log(this);
-				$(this).not(".light").css({
+				$(this).not(".light").animate({
 					border: "none",
 					//border-radius: "5px",
 					color: "#7B7B7B"
-				});
+				},500);
 			});
 
 			$("#home  ul").eq(1).first().css("margin", "auto");
