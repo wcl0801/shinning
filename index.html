@@ -459,8 +459,11 @@
 
 				$(pic).attr('src', 'img/' + index + '.png');
 				var em = $(this).children()[1];
-				$(em).css({
+				$(em).animate({
+					opacity:0,
+					opacity:1,
 					backgroundColor: "#CFDB00"
+					
 				});
 
 			});
