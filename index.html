@@ -450,8 +450,6 @@
 
 			$("#home  ul").eq(1).first().css("margin", "auto");
 			
-			var time = function(){
-			time = setInterval(function(){
 				$("#home  ul").on("mouseenter", function() {
 				//console.log($(this).index());
 				var index = $(this).index();
@@ -466,9 +464,6 @@
 				});
 
 			});
-				},1000);
-			}
-			time();
 			$("#home  ul").on("mouseleave", function() {
 				var pic = $(this).children()[0].children;
 				var index = $(this).index() + 1;
